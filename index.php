@@ -1,15 +1,12 @@
 <?php
 
-    require_once __DIR__ . "./utente.php";
+    require_once __DIR__ . "/UtenteBannato.php";
 
-    class Utente {
-
-        public function__construct($email)
-        {
-            $this->email - $_email;
-        }
-
-    }
+    $Utente = new UtenteBannato("ciccio@gmail.com", "ciccio", 0);
+    var_dump($Utente);
+    
+    $Utente->setDuration("160gg");
+    var_dump($Utente)
 
 
 
